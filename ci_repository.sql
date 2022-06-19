@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jun 15, 2022 at 04:51 AM
+-- Generation Time: Jun 19, 2022 at 10:59 AM
 -- Server version: 5.7.34
 -- PHP Version: 7.4.21
 
@@ -39,6 +39,29 @@ CREATE TABLE `authors` (
 INSERT INTO `authors` (`id`, `author`) VALUES
 (1, 'umar'),
 (2, 'toif');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `enkripsi`
+--
+
+CREATE TABLE `enkripsi` (
+  `id` int(11) NOT NULL,
+  `username` varchar(128) NOT NULL,
+  `hasil` varchar(1024) NOT NULL,
+  `kunci` varchar(256) NOT NULL,
+  `tgl` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `enkripsi`
+--
+
+INSERT INTO `enkripsi` (`id`, `username`, `hasil`, `kunci`, `tgl`) VALUES
+(2, 'umar', 'kasodkasodk', 'kkkkk', '2022-06-19'),
+(4, 'umar', 'DZNNZRZNZ', '1', '2022-06-19'),
+(5, 'admin', 'DZNNZRZNZDZNNZRZNZDZNNZRZNZ', '696969696', '2022-06-19');
 
 -- --------------------------------------------------------
 
@@ -153,6 +176,12 @@ ALTER TABLE `authors`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `enkripsi`
+--
+ALTER TABLE `enkripsi`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `prodi`
 --
 ALTER TABLE `prodi`
@@ -185,6 +214,12 @@ ALTER TABLE `users`
 --
 ALTER TABLE `authors`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `enkripsi`
+--
+ALTER TABLE `enkripsi`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `prodi`
