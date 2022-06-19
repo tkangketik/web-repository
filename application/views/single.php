@@ -2,8 +2,6 @@
 <hr>
 
 <?php
-// $author = $this->db->query("SELECT * FROM authors WHERE id = '$data->id_author'")->row()->author;
-// $type = $this->db->query("SELECT * FROM types WHERE id = '$data->id_type'")->row()->type;
 $prodi1 = $this->db->query("SELECT * FROM prodi WHERE id = '$data->id_prodi'")->row()->program_studi;
 $date_new = date('j F Y', strtotime($data->date . "+0 days"));
 

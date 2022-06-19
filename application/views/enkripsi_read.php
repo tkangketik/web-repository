@@ -31,10 +31,10 @@
                         <tr>
                             <td></td>
                             <?php if ($_SESSION['level'] == 'master') { ?>
-                            <td><a href="<?php echo site_url('enkripsi') ?>" class="btn btn-default">Cancel</a>&nbsp;<?php echo anchor(site_url('caesar/decrypt/?msg=' . $hasil . '&&key=' . $kunci), 'Dekripsi', array('title' => 'detail', 'class' => 'btn btn-danger')); ?></td>
+                                <td><a href="<?php echo site_url('enkripsi') ?>" class="btn btn-default">Cancel</a>&nbsp;<?php echo anchor(site_url('caesar/decrypt/?msg=' . $hasil . '&&key=' . $kunci), 'Dekripsi', array('title' => 'detail', 'class' => 'btn btn-danger')); ?></td>
                             <?php } else { ?>
                                 <td><a href="<?php echo site_url('enkripsi/list') ?>" class="btn btn-default">Cancel</a>&nbsp;<?php echo anchor(site_url('caesar/decrypt/?msg=' . $hasil . '&&key=' . $kunci), 'Dekripsi', array('title' => 'detail', 'class' => 'btn btn-danger')); ?></td>
-                                <?php } ?>
+                            <?php } ?>
                         </tr>
                     </table>
                 </div><!-- /.box-body -->

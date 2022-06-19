@@ -14,12 +14,6 @@
 								<tr>
 									<td>Nama Pemilik </td>
 									<td>
-										<!-- <select class="form-control" name="id_author">
-											<option value="">- Pilih Pemilik -</option>
-											<?php foreach ($authors->result() as $row1) : ?>
-												<option value="<?php echo $row1->id; ?>"><?php echo $row1->author; ?></option> 
-											<?php endforeach; ?>
-										</select> --> 
 										<input type="text" name="nama" class="form-control" placeholder="Nama" required>
 										<input type="hidden" name="username" class="form-control" value="<?= $_SESSION['username'];?>">
 									</td>

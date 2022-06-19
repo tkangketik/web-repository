@@ -8,9 +8,7 @@
           <table class="table table-bordered table-hover">
             <?php
             $date_new = date('j F Y', strtotime($date . "+0 days"));
-            /* $author = $this->db->query("SELECT * FROM authors WHERE id = '$id_author'")->row()->author;
-            $type = $this->db->query("SELECT * FROM types WHERE id = '$id_type'")->row()->type; */
-            $prodi = $this->db->query("SELECT * FROM prodi WHERE id = '$id_prodi'")->row()->program_studi; 
+            $prodi = $this->db->query("SELECT * FROM prodi WHERE id = '$id_prodi'")->row()->program_studi;
 
             if ($thumbnail == '') {
               $thumb = 'noimg.png';
@@ -46,8 +44,6 @@
               <td>Judul</td>
               <td><?php echo $title; ?></td>
             </tr>
-            <!-- <tr><td>Deskripsi</td><td><?php echo $description; ?></td></tr> -->
-            <!-- <tr><td>File</td><td><?php echo $frepo; ?></td></tr> -->
             <tr>
               <td>Foto</td>
               <td><img style="width:300px" class="img-thumbnail" src="<?= base_url() ?>uploads/<?php echo $thumb; ?>"></td>

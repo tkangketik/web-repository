@@ -28,8 +28,6 @@
                 <tr>
                   <?php
                   $date_new = date('j F Y', strtotime($repository->date . "+0 days"));
-                  // $author = $this->db->query("SELECT * FROM authors WHERE id = '$repository->nama'")->row()->author;
-                  // $type = $this->db->query("SELECT * FROM types WHERE id = '$repository->tipe'")->row()->type;
                   $prodi = $this->db->query("SELECT * FROM prodi WHERE id = '$repository->id_prodi'")->row()->program_studi;
                   ?>
                   <td><?php echo ++$start ?></td>

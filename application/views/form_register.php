@@ -43,8 +43,8 @@
                 </div>
             <?php } ?>
             <form action="<?= current_url(); ?>/create_action" method="post">
-            <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="Nama Lengkap" name="nama" value="<?= set_value('nama');?>">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Nama Lengkap" name="nama" value="<?= set_value('nama'); ?>">
                     <span class="glyphicon glyphicon-record form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
@@ -52,11 +52,11 @@
                     <span class="glyphicon glyphicon-home form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="Username" name="username" value="<?= set_value('username');?>">
+                    <input type="text" class="form-control" placeholder="Username" name="username" value="<?= set_value('username'); ?>">
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="Email" name="email" value="<?= set_value('username');?>">
+                    <input type="text" class="form-control" placeholder="Email" name="email" value="<?= set_value('username'); ?>">
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">

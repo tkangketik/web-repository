@@ -4,7 +4,7 @@
             <div class='box'>
                 <div class='box-header'>
                     <div class='box box-primary'>
-                        <link rel="stylesheet" href="https://cdn.heylook.id/misc/stega/css/style.min.css">
+                        <link rel="stylesheet" href="<?= base_url() ?>assets/dist/css/stegano.css">
                         <div id="main">
                             <h1>Enkripsi dan Dekripsi</h1>
                             <div id="description">Proses enkripsi dan dekripsi gambar, dilakukan di halaman ini. Untuk menyisipkan pesan, pilih berkas gambar lalu masukkan pesan dan klik enkripsi dan hasilnya bisa di-download untuk disimpan pada repository.<br>Untuk membuka pesan yang disisipkan, buka berkas gambar yang telah disisipkan pesan lalu klik tombol dekripsi.</div>
@@ -38,8 +38,8 @@
                             </div>
                             <div class="clear"></div>
                         </div>
-                        <script type="text/javascript" src="https://cdn.heylook.id/misc/stega/js/steganography.min.js"></script>
-                        <script type="text/javascript" src="https://cdn.heylook.id/misc/stega/js/script.min.js"></script>
+                        <script type="text/javascript" src="<?= base_url() ?>assets/dist/js/steganography.js"></script>
+                        <script type="text/javascript" src="<?= base_url() ?>assets/dist/js/stegano.js"></script>
                     </div>
                 </div>
             </div>

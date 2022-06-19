@@ -134,11 +134,8 @@
           <li><a href="<?= base_url() ?>dashboard"><i class="fa fa-home"></i> <span>Dashboard </span></a></li>
           <?php if ($_SESSION['level'] == 'master') { ?>
             <li><a href="<?= base_url() ?>users"><i class="fa fa-users"></i> <span>Pengguna </span></a></li>
-          <?php } else { ?>
-            <!-- <li><a href="<?= base_url() ?>users/list"><i class="fa fa-users"></i> <span>Pemilik </span></a></li> -->
-          <?php } ?>
-          <!-- <li><a href="<?= base_url() ?>prodi"><i class="fa fa-file"></i> <span>File </span></a></li> 
-          <li><a href="<?= base_url() ?>types"><i class="fa fa-tag"></i> <span>Tipe </span></a></li>-->
+          <?php } else {
+          } ?>
           <?php if ($_SESSION['level'] == 'master') { ?>
             <li><a href="<?= base_url() ?>repository"><i class="fa fa-book"></i> <span>Repository </span></a></li>
             <li><a href="<?= base_url() ?>enkripsi"><i class="fa fa-key"></i> <span>Enkripsi Pesan</span></a></li>
@@ -149,22 +146,8 @@
           <li><a href="<?= base_url() ?>stegano"><i class="fa fa-image"></i> <span>Sisipkan Pesan</span></a></li>
           <li><a href="<?= base_url() ?>ubah_password"><i class="fa fa-gear"></i> <span>Ubah Password </span></a></li>
 
-          <!--
-        <?php
-        $level = $this->session->userdata('level');
-        if ($level == 'master') {
-        ?>
-        <li><a href="<?= base_url() ?>users"><i class="fa fa-users"></i> <span>Users </span></a></li>
-        <?php
-        }
-        ?>
-        -->
-
         </ul>
       </section>
-
-
-
       <!-- /.sidebar -->
     </aside>
 

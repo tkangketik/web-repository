@@ -11,7 +11,7 @@
 	<tbody>
 		<?php
 		$start = 0;
-		foreach ($data->result() as $row){ ?>
+		foreach ($data->result() as $row) { ?>
 			<tr>
 				<td><?php echo ++$start ?>.</td>
 				<td><a href="<?= base_url() ?>home/single/<?= $row->id ?>" class="font-weight-bold" style="margin-bottom: 1px"><?php echo $row->title ?></a></td>

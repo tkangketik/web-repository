@@ -4,7 +4,7 @@
         <div class='col-xs-12'>
             <div class='box'>
                 <div class='box-header'>
-                    <h3 class='box-title'>ENKRIPSI LIST <br><br> <?php echo anchor('enkripsi/create/', 'Tambah Data', array('class' => 'btn btn-danger btn-sm')); ?>&nbsp;<?php echo anchor('caesar/', 'Enkripsi Pesan', array('class' => 'btn btn-danger btn-sm')); ?>
+                    <h3 class='box-title'>ENKRIPSI LIST <br><br> <?php echo anchor('enkripsi/create/', 'Tambah Data', array('class' => 'btn btn-danger btn-sm')); ?>&nbsp;<?php echo anchor('caesar/', 'Enkripsi Pesan', array('class' => 'btn btn-danger btn-sm')); ?>&nbsp;<?php echo anchor('caesar/decrypt', 'Dekripsi Pesan', array('class' => 'btn btn-danger btn-sm')); ?>
                     </h3>
                 </div><!-- /.box-header -->
                 <div class='box-body'>
