@@ -5,6 +5,11 @@ class Caesar extends CI_Controller{
     
     public function index()
     {
-        $this->template->load('template','repo_caesar');
+        $this->template->load('template','caesar_encrypt');
+    }
+
+    public function decrypt()
+    {
+        $this->template->load('template','caesar_decrypt');
     }
 }

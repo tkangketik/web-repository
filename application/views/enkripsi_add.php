@@ -15,14 +15,14 @@
                                 <tr>
                                     <td>Hasil Enkripsi</td>
                                     <td>
-                                        <input type="text" name="hasil" class="form-control" placeholder="Hasil" required>
+                                        <input type="text" name="hasil" class="form-control" placeholder="Hasil" value="<?= $_GET['hasil'];?>"required>
                                         <input type="hidden" name="username" class="form-control" value="<?= $_SESSION['username']; ?>">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Kunci </td>
                                     <td>
-                                        <input type="text" name="kunci" class="form-control" placeholder="Kunci" required>
+                                        <input type="text" name="kunci" class="form-control" placeholder="Kunci" value="<?= $_GET['kunci'];?>"required>
                                     </td>
                                 </tr>
                                 <tr>
