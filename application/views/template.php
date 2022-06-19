@@ -139,13 +139,14 @@
           <?php } ?>
           <!-- <li><a href="<?= base_url() ?>prodi"><i class="fa fa-file"></i> <span>File </span></a></li> 
           <li><a href="<?= base_url() ?>types"><i class="fa fa-tag"></i> <span>Tipe </span></a></li>-->
-          <li><a href="<?= base_url() ?>caesar"><i class="fa fa-key"></i> <span>Enkripsi Pesan</span></a></li>
-          <li><a href="<?= base_url() ?>enkripsi"><i class="fa fa-image"></i> <span>Sisipkan Pesan</span></a></li>
           <?php if ($_SESSION['level'] == 'master') { ?>
             <li><a href="<?= base_url() ?>repository"><i class="fa fa-book"></i> <span>Repository </span></a></li>
+            <li><a href="<?= base_url() ?>enkripsi"><i class="fa fa-key"></i> <span>Enkripsi Pesan</span></a></li>
           <?php } else { ?>
             <li><a href="<?= base_url() ?>repository/list"><i class="fa fa-book"></i> <span>Repository </span></a></li>
+            <li><a href="<?= base_url() ?>enkripsi/list"><i class="fa fa-key"></i> <span>Enkripsi Pesan</span></a></li>
           <?php } ?>
+          <li><a href="<?= base_url() ?>stegano"><i class="fa fa-image"></i> <span>Sisipkan Pesan</span></a></li>
           <li><a href="<?= base_url() ?>ubah_password"><i class="fa fa-gear"></i> <span>Ubah Password </span></a></li>
 
           <!--
