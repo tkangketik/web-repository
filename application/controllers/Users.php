@@ -16,6 +16,9 @@ class Users extends CI_Controller
 
     public function index()
     {
+        if ($_SESSION['level'] == 'admin') {
+            redirect(site_url('dashboard'));
+        }
         $users = $this->Users_model->get_all();
 
         $data = array(

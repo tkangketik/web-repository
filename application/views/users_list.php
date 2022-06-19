@@ -1,4 +1,3 @@
-<?php if($_SESSION['level'] == 'master') { ?>
 <!-- Main content -->
 <section class='content'>
   <div class='row'>
@@ -61,6 +60,3 @@
     </div><!-- /.col -->
   </div><!-- /.row -->
 </section><!-- /.content -->
-<?php } else {
-  redirect('dashboard/');
-} ?>

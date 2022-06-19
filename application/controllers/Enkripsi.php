@@ -16,6 +16,9 @@ class Enkripsi extends CI_Controller
 
     public function index()
     {
+        if ($_SESSION['level'] == 'admin') {
+            redirect(site_url('enkripsi/list'));
+        }
         $enkripsi = $this->Enkripsi_model->get_all();
         $data = array(
             'enkripsi_data' => $enkripsi

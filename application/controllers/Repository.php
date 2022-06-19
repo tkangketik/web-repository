@@ -19,7 +19,9 @@ class Repository extends CI_Controller
 
     public function index()
     {
-
+        if ($_SESSION['level'] == 'admin') {
+            redirect(site_url('repository/list'));
+        }
         $repository = $this->Repo_model->get_all();
 
         $data = array(
