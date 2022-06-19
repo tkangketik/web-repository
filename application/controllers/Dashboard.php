@@ -16,20 +16,20 @@ class dashboard extends CI_Controller{
         
         $username = $this->session->userdata('username');
         
-        $query1 = $this->db->query("SELECT * from authors");  
+        $query1 = $this->db->query("SELECT username from repo GROUP BY username");  
         $num1   = $query1->num_rows();
 
-        $query2 = $this->db->query("SELECT * from prodi");  
+        $query2 = $this->db->query("SELECT * from repo");  
         $num2   = $query2->num_rows();
 
-        $query3 = $this->db->query("SELECT * from repo");  
+        $query3 = $this->db->query("SELECT * from enkripsi");  
         $num3   = $query3->num_rows();
 
     	
         $this->template->load('template','dashboard', array(
-        'authors' => $num1,
-        'prodi' => $num2,
-        'repo' => $num3,
+        'pengguna' => $num1,
+        'repo' => $num2,
+        'enkripsi' => $num3,
 		));
 
     }
