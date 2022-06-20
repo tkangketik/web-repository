@@ -126,10 +126,7 @@
           <a href="#" class="list-group-item list-group-item-action active">
             Browse
           </a>
-          <!-- <a href="<?= base_url() ?>home/browse_title" class="list-group-item list-group-item-action">Titles</a>
-            <a href="<?= base_url() ?>home/browse_author" class="list-group-item list-group-item-action">Authors</a> -->
           <a href="<?= base_url() ?>home/browse_prodis" class="list-group-item list-group-item-action">File</a>
-          <!-- <a href="<?= base_url() ?>home/browse_type" class="list-group-item list-group-item-action">Tipe</a> -->
         </div>
 
         <br>

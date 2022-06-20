@@ -20,13 +20,9 @@ class home extends CI_Controller{
         $sqls = "SELECT * FROM prodi";        
         $prodi = $this->db->query($sqls);
 
-        $sqla = "SELECT * FROM authors";
-        $author = $this->db->query($sqla);
-
         $this->template->load('frontend_tmp','home', array(
         'data' => $data,
         'prodi' => $prodi,
-        'author' => $author,
 		));
 
     }

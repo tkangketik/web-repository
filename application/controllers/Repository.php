@@ -67,15 +67,8 @@ class Repository extends CI_Controller
 
     public function create()
     {
-        $sql1 = "SELECT * FROM authors";
-        $combo1 = $this->db->query($sql1);
-
-        $sql2 = "SELECT * FROM types";
-        $combo2 = $this->db->query($sql2);
-
         $sql3 = "SELECT * FROM prodi";
         $combo3 = $this->db->query($sql3);
-
 
         $data = array(
             'button' => 'Create',
@@ -93,8 +86,6 @@ class Repository extends CI_Controller
             'description' => set_value('description'),
             'file' => set_value('file'),
             'thumbnail' => set_value('thumbnail'),
-            'authors' => $combo1,
-            'types' => $combo2,
             'prodi' => $combo3,
         );
         $this->template->load('template', 'repo_form_insert', $data);
@@ -146,12 +137,6 @@ class Repository extends CI_Controller
     {
         $row = $this->Repo_model->get_by_id($id);
 
-        $sql1 = "SELECT * FROM authors";
-        $combo1 = $this->db->query($sql1);
-
-        $sql2 = "SELECT * FROM types";
-        $combo2 = $this->db->query($sql2);
-
         $sql3 = "SELECT * FROM prodi";
         $combo3 = $this->db->query($sql3);
 
@@ -171,8 +156,6 @@ class Repository extends CI_Controller
                 'description' => set_value('description', $row->description),
                 'file_repo' => set_value('file', $row->file_repo),
                 'thumbnail' => set_value('thumbnail', $row->thumbnail),
-                'authors' => $combo1,
-                'types' => $combo2,
                 'prodi' => $combo3,
             );
             $this->template->load('template', 'repo_form_update', $data);
